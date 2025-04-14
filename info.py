@@ -13,18 +13,18 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '19863226'))
-API_HASH = environ.get('API_HASH', '8f6bf9eb5bb94dbd2455925eee5b3b84')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6343988375:AAFvZfx1NbTVsoqqb0QUkakACchK-s8HU_M')
+API_ID = int(environ.get('API_ID', '8031189962'))
+API_HASH = environ.get('API_HASH', '67d3ec64db8031189962b5d4804884c0')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7719153689:AAHTIWrldYnbbNOa2xD0O4ojZq08Xh1fdyk')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7140699364').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002245325869'))
+USERNAME = environ.get('USERNAME', "https://telegram.me/moviefastss")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002589776901'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jot:Sidhu@cluster0.qwokssw.mongodb.net/")
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002530980008').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://seiamvai91:seiamvai91@cluster0.aeb0fw4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002195684318'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
